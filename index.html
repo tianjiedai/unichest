@@ -314,11 +314,10 @@ To handle this dilemma, we design a Conquer-and-Divide pre-training framework, t
     <h2> Architecture </h2>
   </center>
   <p style="text-align:justify; text-justify:inter-ideograph;">
-    <p><div style="text-align: center;"><img class="left" src="./resources/model.jpg" width="400px"></div></p>
+    <p><div style="text-align: center;"><img class="left" src="./resources/framework.png" width="600px"></div></p>
     <p>
       <left>
-        Schematic visualization of the proposed Transformer-based video-text alignment network termed <b>NSVA</b>.
-        The visual features are treated as key-value pairs while textual features are treated as queries, to predict the alignment score matrix between video frames and texts. </left>
+        The framework of UniChest, which consists of two training stages. During the ``Conquer" stage, two modality encoders first project visual and textual representations into the common space with alignment, then feed them into the first transformer query networks for prediction. The multi-source common patterns are learnt as much as possible at this stage. During the ``Divide" stage, we freeze the modality encoders and squeeze the source-specific patterns via the MoE-QN module with the guidance of the enhanced supervised loss and the source contrastive learning.</left>
     </p>
 
 
