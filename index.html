@@ -211,7 +211,7 @@
         </td>
         <td align="center" width="200px">
           <center>
-            <span style="font-size:16px"><a href="https://feng-hong.github.io/research/">Feng Hong</a><sup>2</sup></span>
+            <span style="font-size:16px"><a href="https://feng-hong.github.io/research/">Feng Hong</a><sup>1</sup></span>
           </center>
         </td>
       </tr>
@@ -254,7 +254,7 @@
       <tr>
         <td align="center" width="400px">
           <center>
-            <span style="font-size:16px"><sup>2</sup>Shanghai AI Laboratory</span>
+            <span style="font-size:16px"><sup>2</sup>Shanghai Artificial Intelligence Laboratory</span>
           </center>
         </td>
       </tr>
@@ -314,7 +314,7 @@ To handle this dilemma, we design a Conquer-and-Divide pre-training framework, t
     <h2> Architecture </h2>
   </center>
   <p style="text-align:justify; text-justify:inter-ideograph;">
-    <p><div style="text-align: center;"><img class="left" src="./resources/framework.png" width="600px"></div></p>
+    <p><div style="text-align: center;"><img class="left" src="./resources/framework.png" width="800px"></div></p>
     <p>
       <left>
         The framework of UniChest, which consists of two training stages. During the ``Conquer" stage, two modality encoders first project visual and textual representations into the common space with alignment, then feed them into the first transformer query networks for prediction. The multi-source common patterns are learnt as much as possible at this stage. During the ``Divide" stage, we freeze the modality encoders and squeeze the source-specific patterns via the MoE-QN module with the guidance of the enhanced supervised loss and the source contrastive learning.</left>
@@ -344,28 +344,21 @@ To handle this dilemma, we design a Conquer-and-Divide pre-training framework, t
       </center>
       <p>
         <left>
-          We compare our best model with existing state-of-the-art approaches, to present a strong, yet simple baseline on video-text alignment for future research. 
-          As shown in the table, on the challenging HT-Step task, 
-          that aims to ground unordered procedural steps in videos, 
-          our model achieves 46.7% R@1, leading to an absolute improvement of 9.3%, over the existing state-of-the-art (37.4%) achieved by VINA;
-          On HTM-Align, which aligns narrations in the video, 
-          our method exceeds sota model by 3.4%; 
-          On CrossTask, where we need to align video frames and task-specific steps without finetuning, our method outperforms existing state-of-the-art approach by 4.7%,
-          demonstrating our model learns stronger joint video-text representation.</left>
+          Performances under both in-domain and out-domain settings.</left>
       </p>
       <center>
-        <p><img class="center" src="./resources/result.png" width="400px"></p>
+        <p><img class="center" src="./resources/result.png" width="800px"></p>
       </center>
-      <br>
+<!--       <br>
       <hr>
       <center>
         <h2> Acknowledgements </h2>
       </center>
       <p>
         Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a
-          href="http://richzhang.github.io/">Richard Zhang</a>.
-      </p>
-      <br>
+          href="http://richzhang.github.io/">Richard Zhang</a>. -->
+<!--       </p>
+      <br> -->
 </body>
 
 </html>
