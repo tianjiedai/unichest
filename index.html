@@ -321,24 +321,24 @@ To handle this dilemma, we design a Conquer-and-Divide pre-training framework, t
     </p>
 
 
-    <br>
-    <hr>
-    <center>
-      <h2> ASR Transcripts &nbsp;&rarr;&nbsp; Aligned Descriptive Steps </h2>
-    </center>
-    <p style="text-align:justify; text-justify:inter-ideograph;">
-      <p>
-        <left>
-          As presented in the following figure, 
-          the entire procedure of ASR transcripts transformation can be divided into three parts: 
-          (i) we leverage LLM to summarize narrations from the ASR transcript into descriptive steps; (ii) we use the similarity between the original transcript and generated steps to roughly determine the start/end timestamp for each step as pseudo-label; 
-          (iii) we train the <b>NSVA</b> model on the generated steps with pseudo-label, and then use the trained model to refine the time range for each generated step (i.e., self-training). 
-          We name the final dataset as <b>HowToStep</b>.
-        </left>
-      </p>
-      <p><img class="left" src="./resources/pipeline.jpg" width="800px"></p>
-      <br>
-      <hr>
+<!--     <br> -->
+<!--     <hr> -->
+<!--     <center> -->
+<!--       <h2> ASR Transcripts &nbsp;&rarr;&nbsp; Aligned Descriptive Steps </h2> -->
+<!--     </center> -->
+<!--     <p style="text-align:justify; text-justify:inter-ideograph;"> -->
+<!--       <p> -->
+<!--         <left> -->
+<!--           As presented in the following figure,  -->
+<!--           the entire procedure of ASR transcripts transformation can be divided into three parts:  -->
+<!--           (i) we leverage LLM to summarize narrations from the ASR transcript into descriptive steps; (ii) we use the similarity between the original transcript and generated steps to roughly determine the start/end timestamp for each step as pseudo-label;  -->
+<!--           (iii) we train the <b>NSVA</b> model on the generated steps with pseudo-label, and then use the trained model to refine the time range for each generated step (i.e., self-training).  -->
+<!--           We name the final dataset as <b>HowToStep</b>. -->
+<!--         </left> -->
+<!--       </p> -->
+<!--       <p><img class="left" src="./resources/pipeline.jpg" width="800px"></p> -->
+<!--       <br> -->
+<!--       <hr> -->
       <center>
         <h2>Results</h2>
       </center>
