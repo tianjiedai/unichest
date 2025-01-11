@@ -1,4 +1,4 @@
-@ARTICLE{10478603,
+@ARTICLE{dai2024,
   author={Dai, Tianjie and Zhang, Ruipeng and Hong, Feng and Yao, Jiangchao and Zhang, Ya and Wang, Yanfeng},
   journal={IEEE Transactions on Medical Imaging}, 
   title={UniChest: Conquer-and-Divide Pre-Training for Multi-Source Chest X-Ray Classification}, 
@@ -6,5 +6,4 @@
   volume={43},
   number={8},
   pages={2901-2912},
-  keywords={Diseases;Medical diagnostic imaging;Training;X-ray imaging;MIMICs;Self-supervised learning;Visualization;Chest x-rays;medical imaging diagnosis;conquer and divide;vision-language pre-training},
   doi={10.1109/TMI.2024.3381123}}
